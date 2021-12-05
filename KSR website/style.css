@@ -1,0 +1,316 @@
+/* BASIC SETUP */
+/* ---------------------color: rgb(167, 167, 167);----*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+ }
+ html{
+     font-family: 'Lato','Arial',sans-serif;
+     scroll-behavior:smooth;
+     text-rendering: optimizeLegibility;
+     font-size: 10px;
+ }  
+
+header{
+  background-image: url(resources/backgroundimg.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position-x: center;
+  }
+
+.graphic{
+  position: absolute;
+  height: 100vh;
+  width: 96vh;
+}
+
+.graphic img{
+  width: 100%;
+}
+
+/*Buttons*/
+.button{
+  z-index: 1;
+  position: absolute;
+  width: 20%;
+  transform: translate(40vh,57vh);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.event,
+.music{
+  border-radius: 5%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  color: #000000b7;
+  box-shadow: 5px 7.5px 7.5px 0;
+  transition: 0.5s;
+  padding: 1rem;
+}
+
+.event{
+  background-color: #a70021;
+}
+.event a{
+  text-decoration: none;
+}
+
+
+.music{
+  background-color: white;
+}
+.music a{
+  text-decoration: none;
+  color: #a70021;
+}
+
+.event:hover,
+.music:hover{
+  box-shadow: 2px 3px 3px 0;
+}
+
+.event a:hover,
+.music a:hover{
+  transition: 0.5s;
+  color: #aaaaaa;
+}
+ /*About me section*/
+
+
+.aboutme-section{
+  height: fit-content;
+  background-color: rgb(230, 230, 230);
+}
+
+.heading-text{
+  padding: 0 30px 30px 30px;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.heading-text h2{
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 3rem;
+  color: #a70021;
+}
+
+.heading-text hr{
+  border: solid 1px black;
+}
+
+.container-aboutme{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.aboutme-name{
+  width: 40%;
+}
+
+.aboutme-name h1{
+  color: #000000;
+  font-size: 3rem;
+}
+
+.aboutme-name p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #000000;
+  margin-top: 16%;
+  font-size: 2rem;
+}
+
+.aboutme-img{
+  position: relative;
+  width: 35%;
+}
+
+.aboutme-img img{
+  width: 70%;
+  border-radius: 10%;
+}
+
+/* Events Section */
+
+.events-section{
+  background: #a1a1a1;
+  height: fit-content;
+}
+
+.gallery{
+  width: 95%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.photos{
+  width: 30%;
+}
+
+.photos img{
+  border-radius: 2%;
+  width: 100%;
+}
+
+.photos ul{
+  margin: 2% 0 2% 35%;
+  font-size: 2rem;
+  /* color: rgb(0, 0, 0); */
+  color: #a1a1a1;
+  font-weight: 100;
+}
+
+/* Discography */
+.discography-section{
+  background-color: rgb(230, 230, 230);
+  height: fit-content;
+}
+
+.latest_video{
+  display: flex;
+  flex-direction: row;
+}
+
+.discography-section h1{
+  font-size: 3rem;
+  padding-top: 60px;
+  margin-left: 8%;
+  padding-bottom: 10px;
+  color: #a70021;
+}
+
+.main_tv{
+  margin: 15px 90px 40px 0px;
+  margin-left: 10%;
+}
+
+.main_tv iframe{
+  width: 560px;
+  color: #000000;
+  height: 315px;
+  border-radius: 2%;
+  box-shadow: 10px 15px 15px 0;
+  transition: 0.5s;
+}
+ 
+.main_tv iframe:hover{
+  box-shadow: 5px 7.5px 7.5px 0;
+}
+
+.comment{
+  margin-top: 8px;
+  text-align: justify;
+  font-family: 'Oleo Script', cursive;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10%;
+}
+
+.description{
+ font-size: 2.4rem;
+ color: #a70021;
+}
+
+.comment p{
+  color: rgb(107, 107, 107);
+  margin: 2%;
+  box-shadow: 3px 3px 5px 2px;
+}
+
+.other_releases h2{
+  /* background: linear-gradient(to left, transparent, rgb(187, 219, 255) , transparent); */
+  font-size: 3rem;
+  color: #a70021;
+}
+
+.other_releases hr{
+  margin: 1% 20%;
+}
+.video-grid{
+  padding: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-grid div:not(:last-child){
+  margin-bottom: 5%;
+}
+
+.video-grid div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.video-grid iframe{
+  width: 560px;
+  height: 315px;
+  margin: 2rem;
+  border-radius: 2%;
+}
+
+/*Just making website responsive */
+
+@media screen and (max-width:767px){
+ .graphic{
+   display: none;
+ }
+
+.button{
+  width: 50%;
+  transform: translate(15vh,50vh);
+}
+/* Update for website */
+
+
+.container-aboutme{
+  flex-direction: column-reverse;
+}
+
+.container-aboutme div{
+  width: 70%;
+  margin: 1% 15%;
+}
+
+
+.gallery{
+  flex-direction: column;
+}
+
+.photos{
+  width: 95%;
+}
+
+.navigation-auto{
+  margin-top: 54.5vw;
+}
+
+.latest_video{
+  flex-direction: column;
+}
+
+.main_tv iframe{
+  width: 320px;
+  height: 200px;
+}
+.video-grid div{
+  flex-direction: column;
+  padding: 0rem;
+}
+
+.video-grid iframe{
+  width: 320px;
+  height: 200px;
+}
+
+}
