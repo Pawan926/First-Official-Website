@@ -1,2 +1,2 @@
 # First-Official-Website
-I designed and developed a Website for a Musician.
+This is my first official website which is live.
