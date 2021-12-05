@@ -178,6 +178,7 @@ footer{
   clear: both;
   display: flex;
   flex-direction: row;
+  z-index: 10;
   justify-content: space-around;
   align-items: center;
   position: relative;
@@ -259,6 +260,9 @@ footer{
     transform: rotate(0deg) skew(0deg) translate( 0px , 0px);
   }
 
+  footer{
+    height: 100px;
+  }
 
  /*Navigation pull-down effect*/
     
